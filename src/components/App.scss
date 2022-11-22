@@ -1,0 +1,31 @@
+.app-wrapper {
+  --mpc-interaction--label-color-lightMode: black;
+  --mpc-interaction--label-color-darkMode: #eee;
+  --mpc-interaction--label-background-lightMode: transparent;
+  --mpc-interaction--label-background-darkMode: black;
+  .body {
+    padding: 1em;
+  }
+  .mpc-interaction {
+    input {
+      margin: 1em;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      color: var(--mpc-interaction--label-color-lightMode);
+      background: var(--mpc-interaction--label-background-lightMode);
+      border-bottom: 1px solid #ccc;
+      max-width: 40em;
+      &:first-child {
+        border-top: 1px solid #ccc;
+      }
+    }
+    &--dark {
+      label {
+        color: var(--mpc-interaction--label-color-darkMode);
+        background: var(--mpc-interaction--label-background-darkMode);
+      }
+    }
+  }
+}
